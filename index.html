@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="planner.css">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Comfortaa' type='text/css' />
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1 class="lineUp">Planner </h1>
+    </div>
+  
+    <div>
+         <button class="adding" id="adding-button">+</button>
+    </div>
+
+    <div class="popupoverlay"></div>
+    <div class="popbox">
+        <h2>Add your Schedule</h2>
+        <form>
+            <div><input type="text" placeholder="Tasks" id="plan-title"></div>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <textarea id = "descriptions"placeholder="your plans goes here"></textarea>
+            <button  id="addPlan">Add</button>
+            <button id="cancelPlans">Cancel</button>
+        </form>
+        <script src="planner.js"></script>
+    </div>
+</body>
+</html>

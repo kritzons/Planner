@@ -1,0 +1,137 @@
+* {
+
+    font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+}
+
+body {
+    background-color: #FDF0F0;
+}
+.popupoverlay{
+    background-color: #132043;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+.navbar h1 {
+    background-color: #132043;
+    font-size: 50px;
+    color: #F1B4BB;
+    padding: 0.5rem;
+    margin: 0;
+    animation: openclose 2s ease-in-out;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@keyframes openclose {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+        text-indent: 0;
+    }
+}
+
+.adding {
+    background-color: #132043;
+    color: #F1B4BB;
+    border-radius: 50%; /* 100% border-radius might make it look like a full circle, use 50% */
+    padding: 20px 30px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.adding:hover{
+    background-color: #F1B4BB;
+    color: #132043;
+    transition: background-color 0.8s, color 0.8s;
+}
+
+.popbox{
+    background-color: #FFD2D7;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 2;
+    display: none;
+}
+.popbox input{
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+}
+.popbox textarea{
+    background: transparent;
+  
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid black 2px;
+}
+.popbox input::placeholder{
+    color: black;
+}
+.popbox textarea::placeholder{
+    color: black;
+}
+
+.popbox button{
+    background-color: #132043;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #FFD2D7;
+}
+.popbox input:focus{
+    outline: none;
+}
+.popbox textarea:focus{
+    outline: none;
+}
+.Container{
+    padding: 10px;
+}
+
+.bookContainer{
+    padding: 15px;
+    width: 25%;
+    border-radius: 10px;
+     background-color: #132043;
+     color: #F1B4BB;
+     height: auto;
+     margin-top: 40px;
+     box-shadow: #0000008d 3px 2px 1px;
+}
+
+#Deletingsbutton{
+    background-color: #F1B4BB;
+    color: #132043;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#Deletingsbutton:hover{
+    background-color: #9288F8;
+    color:#F1B4BB;
+    animation: openclose 2s ease-in-out;
+}
